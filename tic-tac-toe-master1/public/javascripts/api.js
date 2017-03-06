@@ -4,7 +4,7 @@
 var API = function() {
   var self = this;
 
-  this.socket = io.connect("http://" + document.domain);
+  this.socket = io.connect("http://socket.io/socket.io.js" + document.domain);
   this.handlers = {};
   this.once_handlers = {};
 
