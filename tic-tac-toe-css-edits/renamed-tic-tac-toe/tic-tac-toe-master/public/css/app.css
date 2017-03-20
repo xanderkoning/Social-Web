@@ -24,14 +24,14 @@
   font-size: 14px;
   margin-left: 5px;
   margin-right: 5px;
-  color: red;
+  color: #05080f;
 }
 
 .chat_msg_current {
   font-size: 14px;
   margin-left: 5px;
   margin-right: 5px;
-  color: blue;
+  color: #3b5998;
 }
 
 footer {
@@ -40,3 +40,10 @@ footer {
   text-align: center;
 }
 
+h1 {
+  font-color: #3b5998;
+}
+
+body {
+  font: Helvetica;
+}

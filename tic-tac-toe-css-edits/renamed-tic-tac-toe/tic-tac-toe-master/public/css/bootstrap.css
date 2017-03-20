@@ -5995,8 +5995,8 @@ a.badge:hover {
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+  color: #3b5998;  
+  background-color: #ebeef4;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -6008,6 +6008,7 @@ a.badge:hover {
   line-height: 1;
   letter-spacing: -1px;
   color: inherit;
+  color: #3b5998;
 }
 
 .hero-unit li {
