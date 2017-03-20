@@ -17,6 +17,16 @@
   </head>
   <body>
     <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <fb:login-button autologoutlink="true" onlogin="OnRequestPermission();" scope="email, user_friends">
+</fb:login-button>
+  <script language="javascript" type="text/javascript">
+      FB.init({
+          appId: '652351008281524',
+          status: true,
+          cookie: true,
+          xfbml: true
+      });
+  </script>
     <div>
       <ng-view></ng-view>
     </div>
@@ -28,41 +38,29 @@
     <script type="text/javascript" src="javascripts/template_handler.js"></script>
     <script type="text/javascript" src="javascripts/app.js"></script>
     <script type="text/javascript" src="javascripts/facebook_login.js"></script>
-
     <div class="container">
 
       <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
-          <div class="container" id="top-nav">
+          <div class="container">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">Tic-Tac-Toe: A Social Web Game</a>
+            <a class="brand" href="#">Tic-Tac-Toe</a>
           </div>
         </div>
       </div>
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        
-        <script language="javascript" type="text/javascript">
-            FB.init({
-                appId: '652351008281524',
-                status: true,
-                cookie: true,
-                xfbml: true
-            });
-        </script>
         <h1>Tic Tac Toe!</h1>
         <h2 id='fbusername'></h2>
-        <p>Our project for Social Web 2017 is a game for Facebook Messenger where two people will be able to connect in a manner other than messaging.</p>
-
-        <p>When we communicate face to face, we don’t rely only on speech. How can we build something that mimics nonverbal communication, online?</p>            
-        <fb:login-button autologoutlink="true" onlogin="OnRequestPermission();" scope="email, user_friends" class="btn btn-lg">
-        </fb:login-button>
-
+        <div id='fbpicture'></div>
+        <div id='fbfriends'></div>
+        <p>Play Tic Tac Toe against your friends in this multiplayer demo.</p>
+        <p><a class="btn btn-primary btn-large" href="https://github.com/christkv/tic-tac-toe">Github &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->
@@ -72,14 +70,7 @@
       <hr>
 
       <footer>
-            <p>
-              &copy; Desislava Panayotova, Kellie English, Thijs Smit, Xander Koning
-              <a class="btn-xs" href="https://thesocialweb2017.wordpress.com/">The Social Web &raquo;</a>
-            </p>
-            <p>
-              Code gratefully edited and borrowed from:
-              <a class="btn-xs" href="https://github.com/christkv/tic-tac-toe">ChristKV &raquo;</a>
-            </p>
+        <p>&copy; Christian Kvalheim 2012</p>
       </footer>
 
     </div> <!-- /container -->
