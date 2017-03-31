@@ -37,6 +37,6 @@ cd '.\Program Files\MongoDB\Server\3.4\bin\'
 
 2. Run the node.js application:
 
-cd '.\Social-Web\tic-tac-toe-master-FINAL\tic-tac-toe-master\'
+cd '.\Social-Web\tic-tac-toe-master-FINAL\'
 
 node app.js
